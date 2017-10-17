@@ -27,6 +27,16 @@
       ],
       "js": ["./index.js"],
       "run_at": "document_end"
+    },
+    {
+      "matches": [
+        "*://*.groupme.com/*"
+      ],
+      "css": [
+        "./css/groupme.css"
+      ],
+      "js": ["./index.js"],
+      "run_at": "document_end"
     }
   ],
 

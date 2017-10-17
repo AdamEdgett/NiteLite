@@ -1,0 +1,127 @@
+@backgroundColor: #2A2A2A;
+@textColor: white;
+@highlightColor: #4A4A4A;
+
+body.nitelite {
+  background-color: @backgroundColor;
+  color: @textColor;
+
+  &.chatting {
+    background-color: @backgroundColor;
+    color: @textColor;
+  }
+
+  #chats .onboard .empty_group {
+    color: @textColor;
+  }
+
+  h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    color: @textColor;
+  }
+
+  i.gmicon-poundie {
+    color: @textColor;
+  }
+
+  .pillar {
+    background-color: @backgroundColor;
+
+    .tab {
+      color: @textColor;
+
+      &.logo {
+        &:hover {
+          background-color: @highlightColor;
+        }
+      }
+      &.active {
+        background-color: @highlightColor;
+      }
+    }
+  }
+
+  #tray {
+    .tray-header {
+      .row {
+        background-color: @backgroundColor;
+      }
+    }
+
+    .list-search {
+      background-color: @backgroundColor;
+    }
+
+    .tray-list {
+      background-color: @backgroundColor; // slightly off color
+
+      .list-item {
+        background-color: @backgroundColor;
+
+        .list-heading {
+          color: @textColor;
+        }
+
+        p {
+          color: @textColor;
+        }
+
+        .timestamp {
+          color: @textColor;
+        }
+      }
+    }
+  }
+
+  #chats {
+    .chat-header {
+      background-color: @backgroundColor;
+    }
+
+    .chat-content {
+      .chat-messages {
+        background-color: @backgroundColor;
+
+        .timestamp-divider {
+          color: @textColor; // slightly off
+          background-color: @backgroundColor;
+        }
+
+        .message {
+          &.me {
+            background-color: @highlightColor;
+          }
+
+          &.highlight {
+            background-color: @highlightColor;
+          }
+
+          .nickname {
+            color: #DCDCDC;
+          }
+
+          .pasted {
+            color: @textColor; // slighly off
+          }
+        }
+      }
+
+      .message-composer {
+        background-color: @backgroundColor;
+
+        .composer-wrapper {
+          .emoji-wysiwyg-editor[contenteditable="true"] {
+            &:empty:before {
+              color: #DCDCDC;
+            }
+          }
+        }
+
+        .composer-layout {
+          .emoji-button, .plus-extender {
+            color: @textColor;
+          }
+        }
+      }
+    }
+  }
+}
