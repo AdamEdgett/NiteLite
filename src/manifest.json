@@ -20,7 +20,12 @@
   "content_scripts": [
     {
       "matches": [
-        "*://*.google.com/*"
+        "*://www.google.com/",
+        "*://google.com/",
+        "*://www.google.com/search*",
+        "*://google.com/search*",
+        "*://www.google.com/webhp*",
+        "*://google.com/webhp*"
       ],
       "css": [
         "./css/google.css"
