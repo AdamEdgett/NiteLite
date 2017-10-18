@@ -13,7 +13,7 @@ if (storage)  storage.get('enabled', (value) => {
   handleValueChange(value);
 });
 
-chrome.storage.onChanged.addListener(function(changes, namespace) {
+chrome.storage.onChanged.addListener(() => {
   storage.get('enabled', (value) => {
     handleValueChange(value);
   });

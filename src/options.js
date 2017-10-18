@@ -14,5 +14,5 @@ function loadSettings() {
 }
 
 function saveChanges() {
-  storage.set({'enabled': checkbox.checked });
+  storage.set({ enabled: checkbox.checked });
 }
