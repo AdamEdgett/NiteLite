@@ -15,7 +15,6 @@
     "babelify": "^7.3.0",
     "browserify": "^14.4.0",
     "less": "^2.7.2",
-    "suncalc": "^1.8.0",
     "watch": "^1.0.2"
   },
   "browserify": {
